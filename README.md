@@ -1,6 +1,6 @@
 #KUBERNETES
 
-Komponen-Komponen Kubernetes
+#Komponen-Komponen Kubernetes
 
 1. Komponen Master
 
@@ -88,7 +88,7 @@ Cluster-level Logging
 
 Cluster-level logging bertanggung jawab mencatat log kontainer pada penyimpanan log terpusat dengan antar muka yang dapat digunakan untuk melakukan pencarian.
 
-Membuat Deployment dengan Python + Flask
+#Membuat Deployment dengan Python + Flask
 
 Kubernetes Pod adalah grup yang terdiri dari satu atau lebih Container, yang saling terhubung untuk keperluan administrasi dan jaringan. Pod dalam praktik ini hanya memiliki satu Container. Deployment Kubernetes memeriksa kesehatan Pod dan memulai kembali (restart) Container Pod jika sudah berakhir atau mati. Deployment adalah cara yang disarankan untuk mengelola pembuatan dan replikasi Pod.
 
@@ -112,7 +112,7 @@ Kubernetes Pod adalah grup yang terdiri dari satu atau lebih Container, yang sal
 
   ![](Images/docker-build.png)
 
-Upload ke hub.Docker
+#Upload ke hub.Docker
 1. Login ke hub.docker.
 
   ![](Images/docker-login.png)
@@ -125,8 +125,8 @@ Upload ke hub.Docker
 
   ![](Images/docker-ps.png)
 
-Membuat Deployment menggunakan image python-flask
-1. membuat Deployment.
+#Membuat Deployment menggunakan image python-flask
+1. Membuat Deployment.
 
   ![](Images/kubectl-create.png)
 
@@ -138,7 +138,7 @@ Membuat Deployment menggunakan image python-flask
 
   ![](Images/kubectl-getpods.png)
 
-Membuka port keluar
+#Membuka port keluar
 Secara default, Pod hanya bisa diakses melalui alamat IP internal di dalam cluster Kubernetes. Supaya Container python-flask bisa diakses dari luar jaringan virtual Kubernetes, saya harus ekspos Pod sebagai Service Kubernetes.
 1. Ekspos Pod pada internet publik menggunakan perintah kubectl expose --type-LoadBalancer digunakan untuk ekspos Service keluar dari Cluster.
 
