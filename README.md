@@ -92,31 +92,31 @@ Membuat Deployment dengan Python + Flask
 
 Kubernetes Pod adalah grup yang terdiri dari satu atau lebih Container, yang saling terhubung untuk keperluan administrasi dan jaringan. Pod dalam praktik ini hanya memiliki satu Container. Deployment Kubernetes memeriksa kesehatan Pod dan memulai kembali (restart) Container Pod jika sudah berakhir atau mati. Deployment adalah cara yang disarankan untuk mengelola pembuatan dan replikasi Pod.
 
-1. Membuat folder alifah-Flask
+1. Membuat folder alifah-Flask.
 ![](Images/mkdir-alifah.png)
-2. Membuat file app.py
+2. Membuat file app.py.
 ![](Images/app.png)
-3. Membuat file requirements.txt
+3. Membuat file requirements.txt.
 ![](Images/requirements.png)
-4. Membuat file Dockerfile
+4. Membuat file Dockerfile.
 ![](Images/dockerfile.png)
-5. Menjalankan docker build untuk membuat Image
+5. Menjalankan docker build untuk membuat Image.
 ![](Images/docker-build.png)
 
 Upload ke hub.Docker
-1. Login ke hub.docker
+1. Login ke hub.docker.
 ![](Images/docker-login.png)
-2. Push image yang sudah di dibuat
+2. Push image yang sudah di dibuat.
 ![](Images/docker-push.png)
-3. Melihat hasil Push
+3. Melihat hasil Push.
 ![](Images/docker-ps.png)
 
 Membuat Deployment menggunakan image python-flask
-1. membuat Deployment
+1. membuat Deployment.
 ![](Images/kubectl-create.png)
-2. Melihat Deployment yang sedang berjalan
+2. Melihat Deployment yang sedang berjalan.
 ![](Images/kubectl-get1.png)
-3. Melihat pods yang berjalan pada deployment tersebut
+3. Melihat pods yang berjalan pada deployment tersebut.
 ![](Images/kubectl-getpods.png)
 
 Membuka port keluar
@@ -124,10 +124,10 @@ Secara default, Pod hanya bisa diakses melalui alamat IP internal di dalam clust
 1. Ekspos Pod pada internet publik menggunakan perintah kubectl expose --type-LoadBalancer digunakan untuk ekspos Service keluar dari Cluster.
 ![](Images/expose.png)
 
-2. Melihat Service yang telah dibuat
+2. Melihat Service yang telah dibuat.
 ![](Images/get-services.png)
 
-3. Melihat events
+3. Melihat events.
 ![](Images/get-events.png)
-4. Buka dengan menggunakan port 30175
+4. Buka dengan menggunakan port 30175.
 ![](Images/test.png)
